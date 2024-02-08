@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping karo</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0px; 
+            font-family: Arial;
+            border:border-box;
+        }
+        .navbar{
+            height:60px;
+            background-color:black;
+            color:white;
+            display: flex;
+            align-items:center;
+            font-weight: bolder;
+            /* justify-content: space-evenly; */
+        }
+        .logo{
+            font-size: larger;
+            font-family:'Franklin Gothic Medium';
+            color:gold;
+            font-weight: bolder;
+        }
+        .logo:hover{
+             color:aliceblue; 
+        }
+        .address{
+            margin-left: 50px;
+            color: lightgray;
+        }
+         .ram1{
+            font-size:small;
+         }
+         .add{
+            display: flex;
+            align-items: center;
+        
+         }
+         .ram1{
+            margin-left: 10px;
+         }
+         .search{
+             margin-left: 70px; 
+             display: flex; 
+             height: 30px; 
+             border-radius: 15px;  
+         }
+         .search-icon{
+            background-color:yellow;
+            border-radius:4px;
+            border: none;
+            color: blue;
+         } 
+         .ss{
+            width:400px;
+            border-radius: 4px;
+            height:28px;
+             border: none; 
+             font-size: large;
+         }
+         .rr{
+            border: none;
+            border-radius:4px ;
+            font-size: large;
+         }
+         .sign-in{
+            margin-left: 70px;
+         }
+         span{
+            font-size: small;
+         }
+         .am{
+            font-weight:bolder ;
+         }
+         .return{
+            margin-left:80px ;
+        
+         }
+         .logo:hover{
+            border:1px solid orange;
+         }
+         .return:hover{
+            border:1px solid orange;
+         }
+         .sign-in:hover{
+            border:1px solid orange;
+         }
+        .cart{
+            margin-left: 110px;
+        }
+        .cart:hover{
+            border:1px solid orange;
+        }
+        .cart i{
+          font-size: 30px;
+        }
+        .navbar i{
+            font-size: 30px;
+        }
+        .ad{
+            background-color:chartreuse;
+            height: 30px;
+            align-items: center;
+            font-weight: bold;
+            font-size: large;
+            display: flex;
+            justify-content: space-evenly;
+
+        }  
+        .too{
+            background-color: cadetblue;
+            font-size: larger;
+            text-align: center;
+        }  
+        a{
+            text-decoration: none;
+        } 
+        .content{
+            background-color:burlywood;
+            height: 220px;
+            width:280px;
+            text-align: center;
+        } 
+        .content2{
+            background-color: burlywood;
+            height:220px;
+            width: 280px;
+            margin-left: 30px;
+            text-align: center;
+
+            /* display: flex; */
+            /* flex-direction: row; */
+        } 
+        .midd{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .content3{
+            background-color: burlywood;
+            height: 220px;
+            width:280px;
+            margin-left: 30px;
+            text-align: center;
+        } 
+        .content4{
+            background-color: burlywood;
+            height:220px;
+            width:280px;
+            /* margin-left: 30px; */
+            text-align: center;
+        }
+        .midd2{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .content5{
+            background-color: blanchedalmond;
+            height:220px;
+            width:280px;
+            text-align: center;
+        }
+        .content6{
+            background-color: blanchedalmond;
+            height:220px;
+            width:280px;
+            text-align:center
+        }
+        .content7{
+            background-color: blanchedalmond;
+            height:220px;
+            width:280px;
+            text-align: center;
+        }
+        .content8{
+            background-color: blanchedalmond;
+            height:220px;
+            width:280px;
+            text-align:center;
+        }
+        .deal{
+            width:100%;
+            height:300px;
+            background-color:cadetblue ;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            border: solid 1px cadetblue;
+        }
+        .box1{
+            width:240px;
+            height:200px;
+            background-color: aquamarine;
+            margin-top: 40px;;
+        }
+        .box2{
+            width:240px;
+            height:200px;
+            background-color: aquamarine;
+            margin-top: 40px;
+        }
+        .box3{
+            width:240px;
+            height:200px;
+            background-color:aquamarine;
+            margin-top: 40px;
+        }
+        .box4{
+            width:240px;
+            height:200px;
+            background-color: aquamarine;
+            margin-top: 40px;
+        }
+        .top{
+            width:100%;
+            height:200px;
+            background-color:fuchsia;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            /* border: solid 1px; */
+        }
+        .bot{
+            width:100%;
+            height:200px;
+            background-color:darkturquoise;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            /* margin-top: 20px; */
+        }
+        .wel{
+            width:100%;
+            height:280px;
+            background-color: skyblue;
+            margin-top: 30px;
+            border: 1px solid skyblue;
+        }
+        .wel1{
+            margin-top:15px; 
+            text-align: center;
+        }
+        .gar2{
+            width:100%;
+            height:280px;
+            background-color:cornflowerblue;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .java1{
+            width: 100%;
+            height:360px;
+            background-color:paleturquoise;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            border: 1px solid paleturquoise;
+        }
+        .java2{
+            width: 20%;
+            height:300px;
+            border: solid 1px red;
+            border-radius: 2px;
+            margin-top: 27px;
+        }
+        .java3{
+            width:20%;
+            height:300px;
+            border:solid 1px red;
+            border-radius: 2px;
+            margin-top: 27px;
+        }
+        .java4{
+            width:20%;
+            height:300px;
+            border:solid 1px red;
+            border-radius: 2px;
+            margin-top: 27px;
+        }
+        .java5{
+            width:20%;
+            height:300px;
+            border:solid 1px red;
+            border-radius:2px ;
+            margin-top: 27px;
+        }
+        .phy{
+            text-align: center;
+            font-size: larger;
+            font-weight: bolder ;
+            background-color:aquamarine;
+            width: 100%;
+            height: 100px;
+            border: solid 1px aquamarine;
+            border-radius: 2px;
+        }
+        .phy1{
+              margin-top: 20px;
+            /* width: 100%; */
+            /* height:70px ; */
+             /* align-items: center; */
+
+        }
+        .che{
+            background-color:black;;
+            width: 100%;
+            height: 60px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .che2{
+            margin-top: 20px;
+        }
+        .fot{
+            width: 100%;
+            height: 300px;
+            background-color:purple;
+            border: solid 1px purple;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .pri{
+            width:100%;
+            height:150px;
+            background-color:#888;
+            border: solid 1px #888;
+            /* display: flex; */
+            /* flex-direction: row; */
+            /* justify-content:space-evenly; */
+            /* align-items: center; */
+
+        }
+        .pri1{
+            font-size: larger;
+            font-weight: bolder;
+            color: chartreuse;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 580px;
+            margin-top: 50px;
+        }
+        .country{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            margin-left: 180px;
+            margin-right: 180px;
+        }
+        .ver{
+            width:100%;
+            height:340px;
+            background-color: black;
+            border:solid 1px black;
+             display: flex; 
+             flex-direction: row;
+             justify-content: space-evenly; 
+        }
+        .ver1{
+            /* display:flex; */
+            /* flex-direction: row; */
+            /* justify-content: space-evenly; */
+            color: white;
+            margin-top: 35px;
+        }
+        .ver2{
+            color: white;
+            margin-top: 35px;
+        }
+        .ver3{
+            color: white;
+            margin-top: 35px;
+        }
+        .ver4{
+            color: white;
+            margin-top: 35px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <i class="fa-solid fa-heart"></i>  -->
+    <header>
+        <div class="navbar">
+        <nav class="logo">SHOPKART<i class="fa-solid fa-cart-shopping"></i> </nav>
+        <div class="address">
+            <p class="ram1">Deliver to</p>
+            <div class="add">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="ram2">India</p>
+            
+                <div class="search">
+                    <select class="rr">
+                        <option>All</option>
+                        <!-- <option>Clothes</option> --> -->
+                        <!-- <option>Shoes</option> -->
+                        <!-- <option>Phones</option> -->
+                        <!-- <option>Cosmetics</option> -->
+                        <!-- <option>Electronics</option> -->
+                        <!-- <option>Grocries</option> -->
+                        <!-- <option>Toyes</option> -->
+                        <!-- <option>Electrical gadetes</option> -->
+                        <!-- <option>Mans underwera</option> -->
+                        <!-- <option>Womans Undergarments</option> -->
+                        <!-- <option>Utensiles</option> -->
+                        <!-- <option>Bookes</option> -->
+                    </select>
+                    <input class="ss" placeholder="Search products">
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="sign-in">
+                    <p><span>Hello,sign in</span></p>
+                    <p class="am">Account & Lists</p>
+                </div>
+                <div class="return">
+                    <p><span>Returns</span></p>
+                    <p>& Orders</p>
+                </div>
+                <div class="cart">
+                   <nav>Cart<i class="fa-solid fa-cart-shopping"></i></nav>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="ad">
+            <div class="web">
+                <i class="fa-solid fa-bars"></i>
+                All 
+            </div>
+          <div class="am1"><p>Fresh</p> </div> 
+          <div class="am2"><p>Amazon Mini Tv</p> </div> 
+          <div class="am3"><p>Sells</p></div>
+          <div class="am4"><p>Best Sellers</p></div>
+          <div class="am5"><p>Today's Deals</p></div>
+          <div class="am6"><p>Mobiles</p></div>
+          <div class="am7"><p>Electronics</p></div>
+          <div class="am8"><p>Prime</p></div>
+          <div class="am9"><p>Customer Service</p></div>
+          <div class="pm"><p>Gift Ideas</p></div>
+        
+  </div>
+         <div class="hero">
+            <!-- <img src="https://static3.bigstockphoto.com/4/2/1/large2/124198112.jpg"width="335px"height="150px"> -->
+            <!-- <img src="https://media.licdn.com/dms/image/C5603AQEvoOb2zl_2Bw/profile-displayphoto-shrink_800_800/0/1602404489216?e=2147483647&v=beta&t=zcGTySKid2I3RAbBRJHPSJHKWs136L_xhD6x2Lds-Zw"height="150px"width="336px"> -->
+            <!-- <img src="https://cxotoday.com/wp-content/uploads/2023/02/ecommerce.png"width="340px"height="150px"> -->
+            <!-- <img src="https://s.tmimgcdn.com/scr/1200x750/253400/hero-header-section-template-for-fashion-sale-and-offers_253410-original.jpg"width="320px"height="150px"> -->
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Fashion/GW/Jan/Citi/Unrec-3000._CB584860082_.jpg" height="300px"width=100%>
+  </div>
+        <div class="too">
+         <p>You are on Shopkart.com.You can also shop on shopkart India for millions of products with fast local delivery.Click here to go on <a href="Shopkart.in">Shopkart</a></p>
+  </div>
+    </header>
+    <content>
+  <br>
+         <div class="midd">
+        <div class="content">
+            <p>Up to 75% Off|</p>
+            <p style="color:blue; font-size: larger; font-weight: bolder;">Headphones</p>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boat_Desktop_Qc_1x._SY116_CB577919562_.jpg"width="120px">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boult_Desktop_Qc_1x._SY116_CB577919562_.jpg"width="120px">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Noise_Desktop_Qc_1x._SY116_CB577919562_.jpg"width="120">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Zebronics_Desktop_Qc_1x._SY116_CB577919562_.jpg"width="120px">
+          </div>
+          <div class="content2">
+            <p>Up to 60% off|Styles for</p>
+            <p style="color:blue;font-size:larger;font-weight: bolder;">men</p>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-1-186-116._SY116_CB636110853_.jpg"width="120px">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-2-186-116._SY116_CB636110853_.jpg"width="120px">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-3-186-116._SY116_CB636110853_.jpg"width="120px">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PF_MF/MF-4-186-116._SY116_CB636110853_.jpg"width="120px">
+          </div>
+          <div class="content3">
+            <p>Revamp your home in</p>
+            <p style="color:blue;font-size: larger;font-weight: bolder;">Styles</p>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_furnishings_2._SY116_CB584596691_.jpg"width="120px">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_decor_1._SY116_CB584596691_.jpg"width="120px">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_storage_1._SY116_CB584596691_.jpg"width="120px">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/186x116_Home_lighting_2._SY116_CB584596691_.jpg"width="120px">
+          </div>
+          <div class="content4">
+            <p>More</p>
+            <p style="color:blue;font-size: larger;font-weight: bolder;">Items</p>
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/AF/WRS/Eventpage/deals/9.png"width="120px"height="70px">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/AF/WRS/Eventpage/deals/10.png"width="120px"height="70px">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/AF/WRS/Eventpage/deals/7.png"width="120px"height="70px">
+            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Fashion/AF/WRS/Eventpage/deals/4.png"width="120px"height="70px">
+          </div>
+         </div>
+         <br>
+         <div class="midd2">
+            <div class="content5">
+                <p style="color:blue">Get the perfect screen size</p>
+                <p style="color:blue">|TVs starting Rs 6,999</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/Suma/TVDealsParade/MSO/PCSize/186/revised/32._SY116_CB584636925_.jpg"width="120px"height="70px">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/Suma/TVDealsParade/MSO/PCSize/186/revised/43._SY116_CB584636925_.jpg"width="120px"height="70px">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/Suma/TVDealsParade/MSO/PCSize/186/revised/Shop_by_inches32._SY116_CB584636925_.jpg"width="120px"height="70px">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG23/Suma/TVDealsParade/MSO/PCSize/186/revised/65._SY116_CB584636925_.jpg"width="120px"height="70px">
+            </div>
+            <div class="content6">
+                <p style="color:blue">Starting Rs 99|All your</p>
+                <p style="color:blue">home improvement needs</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_4._SY116_CB600489960_.jpg"width="120px"height="70px">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_3._SY116_CB600489960_.jpg"width="120px"height="70px">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_7._SY116_CB600489960_.jpg"width="120px"height="70px">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/HI/SYED/ATF/QC-adapts_186x116_5._SY116_CB600489960_.jpg"width="120px"width="70px">
+            </div>
+            <div class="content7">
+                <p style="color:blue">Stsrting Rs 139|Amazon</p>
+                <p style="color:blueviolet">brands and more</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/Kitchen_PC_QC_186_1._SY116_CB570512815_.jpg"width="120px"height="70px">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/Kitchen_PC_QC_186_3._SY116_CB570512815_.jpg"width="120px"height="70px">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/1x_Desktop_Quad_card_w_title_-_Card_3._SY116_CB572041232_.jpg"width="120px"height="70px">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/Kitchen_PC_QC_186_2._SY116_CB570512815_.jpg"width="120px"height="70px">
+            </div>
+            <div class="content8">
+                <p style="color:blue">Baby essential & fun toys|</p>
+                <p style="color:blue">Amozon Brands & more</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/QC_186x116_1._SY116_CB595777477_.jpg"width="120px"height="70px">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/PC_QC_186x116_5_CPB01._SY116_CB570992602_.jpg"width="120px"height="70px">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/AmazonBrands/Bikram/Bikram1/QC_PC_186x116_1_Week50._SY116_CB571094630_.jpg"width="120px"height="70px">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/QC_PC_372x232_7._SY116_CB585040591_.jpg"width="120px"height="70px">
+            </div>
+         </div>
+         <br>
+         <div class="deal">
+            <h3>Today's Deals</h3>
+            <!-- <p>see all details</p> -->
+            <div class="box1">
+              <img src="https://www.sunrisetrading.in/wp-content/uploads/Skybags-Luggage-Hard-Reef-Blue-1.jpg"width="100%"height="100%">
+              <p style="background-color: red;font-weight: bold;">Up to 73% off</p>
+            </div>
+            <div class="box2">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/kk8mcnk0/pot-pan/a/d/f/24-tawa-n2-ajit-original-imafzmy2uhddpwun.jpeg?q=90&crop=false"height="100%"width="100%">
+                <p style="background-color: red;font-weight: bold;">Up to 51% Off</p>
+            </div>
+            <div class="box3">
+             <img src="https://m.media-amazon.com/images/I/61UDSaUgQnL._AC_UY1100_.jpg"height="100%"width="100%">
+             <p style="background-color: red;font-weight: bold;">Up to 78% Off</p>
+            </div>
+            <div class="box4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEm_zYKKRIRILlI6I1Jq8jwzVJyDuUsQcXRvc3kOpAteZnKizhSBMpjpPI8wGsa4HGT7w&usqp=CAU"height="100%"width="100%">
+                <p style="background-color: red;font-weight: bold;">Up to 41% Off</p>
+            </div>
+         </div>
+         <br>
+         <br>
+         <div class="bdy">
+            <h2 style="background-color:fuchsia;text-align: center;">Up to 71% off|Amazing brands</h2>
+         </div>
+         <div class="top">
+            <img src="https://m.media-amazon.com/images/I/81Vzm0NAr8L._AC_SY200_.jpg"width="50%"height="70%">
+            <img src="https://m.media-amazon.com/images/I/71-5Ex80m6L._AC_SY200_.jpg"width="50%"height="70%">
+            <img src="https://m.media-amazon.com/images/I/91f0Vfh1MEL._AC_SY200_.jpg"width="50%"height="70%">
+            <img src="https://m.media-amazon.com/images/I/61lR93HHNiL._AC_SY200_.jpg"width="50%"height="70%">
+            <img src="https://m.media-amazon.com/images/I/81mjCn6KV0L._AC_SY200_.jpg"width="50%"height="70%">
+            <!-- <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/a373daa6-fae7-4997-9ac2-9ecf182d9787.jpeg">  -->
+         </div>
+         <br>
+            <div class="bot1">
+                <h2 style="background-color: brown;text-align: center;">Up to 70% off|Exclusive collections of home decore</h2>
+            </div>
+         <div  class="bot">
+          <img src="https://www.shahisajawat.com/cdn/shop/products/product-image-1677176487_1024x1024.jpg?v=1616243571"width="240px"height="200px">
+          <img src="https://m.media-amazon.com/images/I/81p9MQ1eWJL._AC_UF894,1000_QL80_.jpg"width="240px"height="200px">
+          <img src="https://indiacircus.com/pub/media/wysiwyg/collection/images/Lamp-Base-26.04.2022.jpg"width="240px"height="200px">
+          <img src="https://indiacircus.com/pub/media/wysiwyg/collection/images/Lamp-Base-26.04.2022.jpg"width="240px"height="200px">
+         </div>
+         <div class="wel">
+            <div class="wel1">
+            <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/a373daa6-fae7-4997-9ac2-9ecf182d9787.jpeg">
+         </div>
+         </div>
+         <br>
+         <div class="gar1">
+            <h2 style="background-color: brown;text-align: center;">Up to 60% off|New Arrivals exclusive showcased for local shoping destination</h2>
+         </div>
+         <div class="gar2">
+           <img src="https://5.imimg.com/data5/SELLER/Default/2022/7/WJ/XF/IT/155591082/raksha-bandhan-dress-for-sister-ladies-teenage-girl-dress-for-raksha-bandhan-2022-500x500.jpg" height="260px">
+           <img src="https://i.pinimg.com/564x/5b/04/d1/5b04d10110695814ecc9b79628437cc2.jpg"height="260px">
+           <img src="https://www.shutterstock.com/image-photo/woman-black-dress-fashion-blond-600nw-2227177083.jpg"height="260px">
+           <img src="https://m.media-amazon.com/images/I/61AkqeLrg6L._AC_SY200_.jpg"height="260px">
+           <img src="https://m.media-amazon.com/images/I/71l7aG0qvEL._AC_SY200_.jpg"height="260px">
+         </div>
+         <br>
+         <div class="java1">
+            <div class="java2">
+             <img src="https://images-na.ssl-images-amazon.com/images/I/31PNwiPcsSL._SX160_QL100_AC_SCLZZZZZZZ_.jpg"width="100%"height="200px">
+             <p>Vinod magic stainless</p>
+             <p>steel smart 3 in 1</p>
+             <p style="background-color: brown;">15% off</p>
+             <h3>Rs 3,104<sup>00</sup></h3>
+            </div>
+            <div class="java3">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/419TSMZXj8L._SX160_QL100_AC_SCLZZZZZZZ_.jpg"width="100%"height="200px">
+                <p>KARP Silicone Bowl Lids</p>
+                <p>Red Set of 5 Reusable....</p>
+                <p style="background-color: brown;">50% off</p>
+                <h3>Rs 3000<sup>00</sup></h3>
+            </div>
+            <div class="java4">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/41iquIKTRzL._SX160_QL100_AC_SCLZZZZZZZ_.jpg"width="100%"height="200px">
+                <p>Zaib Stainless Steel</p>
+                <p>Microwave Safe Mixing..</p>
+                <p style="background-color: brown;">61% off</p>
+                <h3>Rs 470</h3>
+            </div>
+            <div class="java5">
+             <img src="https://images-na.ssl-images-amazon.com/images/I/51IUjfNXmYL._SX160_QL100_AC_SCLZZZZZZZ_.jpg"width="100%"height="200px">
+             <p>Cello Opalware Divin</p>
+             <p>Series Royal Amber Dinne</p>
+             <p>Set, 33 Units | Opal Glass...</p>
+             <p style="background-color: brown;">20% off</p>
+             <h3>Rs 3,441<sup>00</sup></h3>
+            </div>
+         </div>
+         <br>
+         <br>
+         <div class="phy">
+            <div class="phy1">
+                <p> See personalised Recommendation</p>
+            <input type="text"placeholder="Sign in" id="text1">
+            <h6>New customer?start here</h6>
+            </div>
+         </div>
+         <br>
+         <div class="che">
+             <div class="che2">
+          <p style="font-weight: bold;color: white;">Back to top</p>
+             </div>
+         </div>
+        </content>
+        <footer>
+            <div class="fot">
+              <div class="fot1">
+                <h2 style="color: white;margin-top: 40px;">Get to Know Us</h2>
+                <p style="color: white;">About Us</p>
+                <p style="color: white;">Carrers</p>
+                <p style="color: white;">Press Releases</p>
+                <p style="color: white;">Shopkart Science</p>
+              </div>
+              <div class="fot2">
+                <h2 style="color: white;margin-top: 40px;">Contact Us</h2>
+                <p style="color: white;">Facebook</p>
+                <p style="color: white;">Twitter</p>
+                <p style="color: white;">Instagram</p>
+              </div>
+              <div class="fot3">
+                <h2 style="color: white;margin-top: 40px;">Make Money with Us</h2>
+                <p style="color: white;">Sell on Shopkart</p>
+                <p style="color: white;">Sell under Shopkart Accelerator</p>
+                <p style="color: white;">Protect and Build Your Brand</p>
+                <p style="color: white;">Shopkart Global Selling</p>
+                <p style="color: white;">Become an Affiliate</p>
+                <p style="color: white;">Fulfilment by Shopkart</p>
+                <p style="color: white;">Advertise Your Products</p>
+                <p style="color: white;">Shopkart Pay on Merchants</p>
+              </div>
+              <div class="fot4">
+                <h2 style="color: white;margin-top:40px ;">Let Us Help You</h2>
+                <p style="color: white;">COVID-19 and Shopkart</p>
+                <p style="color: white;">Your Account</p>
+                <p style="color: white;">Return Centre</p>
+                <p style="color: white;">100% Purchase Protection</p>
+                <P style="color: white;">Shopkart App Download</P>
+                <p style="color: white;">App</p>
+              </div>
+            </div>
+            <div class="pri">
+                <div class="pri1">
+                    SHOPKART<i><i class="fa-solid fa-cart-shopping"></i></i>
+                    <!-- <p><i class="fa-sharp fa-light fa-globe"></i></p> -->
+                </div>
+                <br>
+                <div class="country">
+                    <p>Austrlia</p>
+                    <p>Japan</p>
+                    <p>China</p>
+                    <p>Brazil</p>
+                    <p>Canada</p>
+                    <p>France</p>
+                    <p>Germany</p>
+                    <p>Italy</p>
+                    <p>USA</p>
+                    <p>England</p>
+                    <p>India</p>
+                    <p>Poland</p>
+                    <p>Singapor</p>
+                    <p>Netherland</p>
+                </div>
+            </div>
+            <div class="ver">
+               <div class="ver1">
+                <p style="font-weight:bolder;font-size: larger;">AbeBooks</p>
+                <p>Boks art</p>
+                <p>&, collections</p>
+                <br>
+                <br>
+                <p style="font-weight: bolder;font-size: larger;">Shopbop</p>
+                <p>Designer</p>
+                <p>Fashion Brands</p>
+               </div>
+               <div class="ver2">
+                <p style="font-size: larger;font-weight:bolder ;">Shopkart webseries</p>
+                <p>Scalable Cloud</p>
+                <p>Computing service</p>
+                <br>
+                <br>
+                <p style="font-weight: bolder;font-size: larger;">Shopkart Business</p>
+                <p>Everything for</p>
+                <p>Your Business</p>
+               </div>
+               <div class="ver3">
+                <p style="font-size: larger;font-weight: bolder;">Audible</p>
+                <p>Download</p>
+                <p>audio Books</p>
+                <br>
+                <br>
+                <p style="font-size: larger;font-weight: bolder;">prime Now</p>
+                <p>2-Hour Delivery</p>
+                <p>on Every items</p>
+               </div>
+               <div class="ver4">
+                <p style="font-size: large;font-weight: bolder;">IMDb</p>
+                <p>Movies,TV</p>
+                <p>& Celebrities</p>
+                <br>
+                <br>
+                <p style="font-size: larger;font-weight: bolder;">Shopkart Prime Music</p>
+                <p>100 Millions songs,ad-free</p>
+                <p>over 15 million podcast episodes</p>
+               </div>
+            </div>
+        </footer>
+</body>
+</html>
